@@ -1,22 +1,21 @@
 import React, {Component} from 'react';
 import PortfolioItem from './PortfolioItem';
-
-
-import img1 from '../assets/img/portfolio/dreams-preview.png';
-import img2 from '../assets/img/portfolio/escape-preview.png';
-import img3 from '../assets/img/portfolio/golden-preview.png';
-import img4 from '../assets/img/portfolio/startup-framework-preview.png';
-import img5 from '../assets/img/portfolio/treehouse-preview.png';
-import img6 from '../assets/img/portfolio/roundicons-free.png';
+import itemImage1 from '../assets/img/portfolio/dreams-preview.png';
+import itemImage2 from '../assets/img/portfolio/escape-preview.png';
+import itemImage3 from '../assets/img/portfolio/golden-preview.png';
+import itemImage4 from '../assets/img/portfolio/startup-framework-preview.png';
+import itemImage5 from '../assets/img/portfolio/treehouse-preview.png';
+import itemImage6 from '../assets/img/portfolio/roundicons-free.png';
 
 const portfolio = [
-    {title:'Threads', subtitle:'Illustration', image: img1},
-    {title:'Explore', subtitle:'Graphic Design', image: img2},
-    {title:'Finish', subtitle:'Identity', image: img3},
-    {title:'Lines', subtitle:'Branding', image: img4},
-    {title:'Southwest', subtitle:'Website Design', image: img5},
-    {title:'Window', subtitle:'Photography', image: img6}
+    {title:'Threads', subtitle:'Illustration', image: itemImage1},
+    {title:'Explore', subtitle:'Graphic Design', image: itemImage2},
+    {title:'Finish', subtitle:'Identity', image: itemImage3},
+    {title:'Lines', subtitle:'Branding', image: itemImage4},
+    {title:'Southwest', subtitle:'Website Design', image: itemImage5},
+    {title:'Window', subtitle:'Photography', image: itemImage6}
 ];
+
 class Portfolio extends Component{
     render(){
         return (
@@ -29,10 +28,7 @@ class Portfolio extends Component{
                         </div>
                     </div>
                     <div className="row">
-                       {portfolio.map((item, index) => {
-                           return <PortfolioItem {...item} key={index}/>
-                       })}
-                        
+                       {portfolio.map((item, index) => (<PortfolioItem {...item} key={index}/>))}
                     </div>
                 </div>
             </section>
