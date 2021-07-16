@@ -7,14 +7,7 @@ class Home extends Component{
     render() {
         return(
             <div>
-                <Header
-                    title="Welcome to our Studio"
-                    subtitle="It's Nice to meet ya"
-                    buttonText="Tell me more"
-                    link="/services"
-                    showButton={true}
-                    image={backgroundImage}          
-                />
+                <Header title="Welcome to our Studio" subtitle="It's Nice to meet ya" buttonText="Tell me more" link="/services" showButton={true} image={backgroundImage}/>
                 <Services />
             </div>
         );
