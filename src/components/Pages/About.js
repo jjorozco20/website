@@ -1,8 +1,17 @@
 import React, {Component} from 'react';
-
+import Header from '../Common/Header';
+import image from '../assets/img/services.png';
 class About extends Component{
     render(){
         return(
+            <div>
+            <Header
+                    title="About us"
+                    subtitle="It's really a great story"
+                    showButton={false}
+                    image={image}          
+                
+                />
             <div>
                 <section id="about">
                     <div className="container">
@@ -85,7 +94,8 @@ class About extends Component{
                 </section>
 
             </div>
-        )
+            </div>
+        );
     }
 }
 export default About;
