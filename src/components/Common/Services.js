@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import SingleService from './SingleService';
 
 const services = [
@@ -7,8 +7,7 @@ const services = [
     {title: 'Web Security', description: 'piano', icon: 'fa-lock'}
 ];
 
-class Services extends Component{
-    render(){
+function Services (){
         return (
             <section id="services">
                 <div className="container">
@@ -23,5 +22,4 @@ class Services extends Component{
             </section>
         );
     }
-}
 export default Services;
