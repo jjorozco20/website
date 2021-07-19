@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PortfolioItem from './PortfolioItem';
 import itemImage1 from '../assets/img/portfolio/dreams-preview.png';
 import itemImage2 from '../assets/img/portfolio/escape-preview.png';
@@ -16,8 +16,7 @@ const portfolio = [
     {title:'Window', subtitle:'Photography', image: itemImage6}
 ];
 
-class Portfolio extends Component{
-    render(){
+function Portfolio (){
         return (
             <section id="portfolio" className="bg-light-gray">
                 <div className="container">
@@ -33,6 +32,5 @@ class Portfolio extends Component{
                 </div>
             </section>
         );
-    }
-}
+ }
 export default Portfolio;
