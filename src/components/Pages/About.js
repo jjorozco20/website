@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Header from '../Common/Header';
 import backgroundImage from '../assets/img/services.png';
 
-class About extends Component{
-    render(){
+function About () {
         return(
             <div>
                 <Header title="About us" subtitle="It's really a great story" showButton={false} image={backgroundImage}/>
@@ -90,6 +89,5 @@ class About extends Component{
                 </div>
             </div>
         );
-    }
 }
 export default About;
